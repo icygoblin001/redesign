@@ -20,38 +20,56 @@
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="myNavbarToggler10">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav mx-auto" id = "links">
               <li class="nav-item">
-                  <a class="nav-link link-success" href="#">Home</a>
+                  <!-- <a class="nav-link link-success" href="#">Home</a> -->
+                  <button type="button" class="btn btn-outline-success btn-block nav-button">Home</button>
               </li>
               <li class="nav-item">
-                  <a class="nav-link link-success" href="#">History</a>
+                  <!-- <a class="nav-link link-success" href="#">History</a> -->
+                  <button type="button" class="btn btn-outline-success btn-block nav-button">History</button>
+
               </li>
               <li class="nav-item">
-                  <a class="nav-link link-success" href="#">What is Mochi?</a>
+                  <!-- <a class="nav-link link-success" href="#">What is Mochi?</a> -->
+                  <button type="button" class="btn btn-outline-success btn-block nav-button">What is Mochi?</button>
+
               </li>
               <li class="nav-item">
-                  <a class="nav-link link-success" href="#">Contact</a>
+                  <!-- <a class="nav-link link-success" href="#">Contact</a> -->
+                  <button type="button" class="btn btn-outline-success btn-block nav-button">Contact</button>
+
               </li>
               <li class="nav-item">
-                <a id = "header" class="nav-link link-success" href="#"><b>Buy Mochi</b></a>
+                <!-- <a id = "header" class="nav-link link-success" href="#"><b>Buy Mochi</b></a> -->
+                <button type="button" class="btn btn-outline-success btn-block nav-button"><b>Buy Mochi</b></button>
+
             </li>
           </ul>
           <!-- socials -->
           <ul class="navbar-nav sm-icons mr-0">
-              <li class="nav-item"><a class="nav-link link-success" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="nav-item" id = "keep-right"><a class="nav-link link-success" href="#"><i class="fab fa-instagram"></i></a></li>
               <li class="nav-item"><a class="nav-link link-success" href="#"><i class="fab fa-facebook"></i></a></li>
               <li class="nav-item"><a class="nav-link link-success" href="#"><i class="fab fa-yelp"></i></a></li>
           </ul>
       </div>
     </nav>
-      <h1 class="display-1">Welcome to <br> <em>Fugetsu-Do</em>!</h1>
+
+
+    <div id = "jumbo-background" class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <h1 id = "jumbo-text" class="display-4">Welcome to <em>Fugetsu-Do</em>!</h1>
+      </div>
+    </div>
+
+    <br>
+
 
       <!-- <h1>Welcome to Fugetsu-Do!</h1>     -->
 
       <!-- popup -->
 
-      <div class="alert alert-success" role="alert">
+      <div class="alert alert-warning" role="alert">
         <h4 class="alert-heading">Fugetsu-do is a proud supporter of the Go Little Tokyo community effort!</h4>
         <p>Read the <a href = "https://laist.com/2020/03/26/little_tokyo_save_restaurants_businesses_coronavirus_social_media.php">latest news</a> about everyone's efforts during this critical time.</p>
         <p class="mb-0">Please support the Little Tokyo businesses and local restaurants! For more information and a full list of small businesses in Little Tokyo, please visit <a href = "littletokyola.org/lovelt">littletokyola.org/lovelt</a>   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -62,18 +80,19 @@
       <div class="row">
         <div class = "row">
             <div class="col-lg">
-              <img class = "gallery" src= "imgs/one.jpg">
+              <img src= "imgs/one.jpg">
             </div>
-            <div class="col-lg">
-              <p><span class= "title"><b>Location: </b></span>315 East First Street, Los Angeles, CA 90012</p>
-              <p><span class= "title"><b>Hours: </b></span>Open Daily, 8:00 am to 6:00 pm</p>
+            <div class="col-lg text-center add-spacing">
               <p><span class= "title"><b>Phone: </b></span>(213) 625-8595</p>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block">Buy Mochi</button>
+              <p><span class= "title"><b>Hours: </b></span>Open Daily, 8:00 am to 6:00 pm</p>
+              <p><span class= "title"><b>Visit Us: </b></span>315 East First Street, Los Angeles, CA 90012</p>
+              <button type="button" class="btn btn-success btn-lg btn-block body-button">Buy Mochi</button>
 
               <hr>
-              <p><b>Fugetsu-Do is a family-owned mochi and manju sweet shop in the Little Tokyo area of Los Angeles, California since 1903.</b></p>
-              <p>Fugetsu-do creates the finest Japanese mochi and manju in Los Angeles by our expert artisans. You can check us out on Yelp and search for us on Google to see the countless positive reviews on our products. We thank anyone who has enjoyed our mochi and manju over the many years. The over 100 positive reviews and the 117+ years of being in business cannot be wrong! We invite you to come by the store, visit one of the many markets that carry our products, or order our mochi online from Japansuper.com and have it delivered fresh to your doorstep!</p>
-              <button type="button" class="btn btn-outline-success btn-lg btn-block">Learn More</button>
+              <p class = "description"><b>Fugetsu-Do is a family-owned mochi and manju sweet shop in the Little Tokyo area of Los Angeles, California since 1903.</b></p>
+              <br>
+              <p class = "description">Fugetsu-do creates the finest Japanese mochi and manju in Los Angeles by our expert artisans. You can check us out on Yelp and search for us on Google to see the countless positive reviews on our products. We thank anyone who has enjoyed our mochi and manju over the many years. The over 100 positive reviews and the 117+ years of being in business cannot be wrong! We invite you to come by the store, visit one of the many markets that carry our products, or order our mochi online from Japansuper.com and have it delivered fresh to your doorstep!</p>
+              <button type="button" class="btn btn-success btn-lg btn-block body-button">Learn More</button>
 
 
 
@@ -84,22 +103,29 @@
 
     <hr>
 
+    <br>
+
     <div class = "container-fluid">
       <div class = "row">
-        <div class="col-lg">
+        <div class="col">
           <img class = "gallery" src= "imgs/two.jpg">
         </div>
-        <div class="col-lg">
+        <div class="col">
           <img class = "gallery" src= "imgs/three.jpg">
         </div>
       </div>
 
       <div class="container-fluid">
         <div class="col">
-          <img class = "gallery" src= "imgs/press-coverage.png">
+          <img src= "imgs/press-coverage.png">
         </div>
       </div>
     </div>
+
+    <div class = "container-fluid footer">
+      <a class = "footer" href = "#">The Washington Post</a> | <a class = "footer" href = "#">KCRW</a> | <a class = "footer" href = "#">KCET</a> | <a class = "footer" href = "#">LA Weekly</a> | <a class = "footer" href = "#">ABC7 Eyewitness News</a> | <a class = "footer" href = "#">BuzzFeed</a>
+    </div>
+    <br>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
