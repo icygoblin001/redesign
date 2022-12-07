@@ -1,0 +1,32 @@
+body {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+img {
+  width: 100%;
+}
+
+#style {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#buy-mochi {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
